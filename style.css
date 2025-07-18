@@ -252,3 +252,76 @@ nav ul li a:hover::after {
 .social-links i:hover{
     transform: translate(-5px);
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 1rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding-top: 150px;
+  }
+
+  .image-pista img,
+  .image-pista .swiper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-text {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-text h1 {
+    font-size: 40px;
+  }
+
+  .main-text p {
+    font-size: 14px;
+  }
+
+  .main-text button {
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .right {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .social-links::before {
+    display: none;
+  }
+
+  .wave {
+    display: none; 
+  }
+}
